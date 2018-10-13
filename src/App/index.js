@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 import './index.css';
 
-import image from '../assets/outreachio_logo.png'
-import Menu from '../Menu/index';
+import About from '../About';
+import Footer from '../Footer';
+import Menu from '../Menu';
+import Work from '../Work';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Menu />
-        <header className="App-header">
-          <img src={image} alt={image} />
-          <img src={image} alt={image} />
-          <img src={image} alt={image} />
-          <img src={image} alt={image} />
-          <img src={image} alt={image} />
-          <img src={image} alt={image} />
-          <img src={image} alt={image} />
-        </header>
+        <About />
+        <Work />
+        <Footer />
       </div>
     );
   }
